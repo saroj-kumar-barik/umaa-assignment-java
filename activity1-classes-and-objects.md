@@ -1,11 +1,11 @@
  ### 1) Example with code to show state and behaviour of an object where behaviour depends upon the state of object?
  
- * Below is a code in java that explains the state and behaviour of a object
+ * Below is a code in java that explains the state and behaviour of an object
  ```java
  package org.activitypractice;
 
 public class StateAndBehavior {
-    // explaining the fields of a laptop class
+    // explaining the fields of a laptop
     private String model;
     private String nameOfOS;
     private double rating;
