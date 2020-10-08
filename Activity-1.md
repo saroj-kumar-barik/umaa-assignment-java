@@ -41,7 +41,7 @@ public class StateAndBehavior {
 }
 ```
 * In the above code the the states of the objects are : model - "ASUS ROG STRIX G, nameOfOS - Windows & rating - 4.6
-* Here ***getDetails()*** & ***toString()*** are the bihaviour of the object
+* Here ***getDetails()*** & ***toString()*** are the behaviour of the object
 * We have accesed the behavior of the states of the objects in the behaviour part
 
 
@@ -56,9 +56,10 @@ public class StateAndBehavior {
 
 ### 4) Object class is in which package ?
 * It is present in java.lang package.
-##Find the Output :
 
-### 1)
+* ## Find the Output : ##
+
+### 1) Find the output?
 ```java
 public class Test
 {
@@ -81,7 +82,7 @@ public class Test
 * So obj1.hashCode() == obj2.hashCode() will not be same hence O/P comes False
 * The getClass() methods returns the class name of the Object hence O/P comes to be : class Test
 
-### 2)
+### 2) Find the output?
 ```java
 public class Test {
     int x;
@@ -133,7 +134,7 @@ public class Test {
 ```
 * The above code will compile fine because we have defind a no argument constructor for the call : new Test() and hence t.x will give a O/P as 0(Default value)
 
-### 5) 
+### 5) Find the output?
 ```java
 public class Test {
     int x;
@@ -148,7 +149,7 @@ public class Test {
 ### Ans :
 * The O/P of the above code is 0 and null because the default values for int and String is 0 and null respectively
 
-### 6) 
+### 6) Find the output?
 ```java
 public class Test {
     int x;
@@ -175,7 +176,7 @@ public class Test {
 * John
 * The statement : Test tVar = this; , tVar will be assigned the same memory location as of t as "this" refers to the current object.
 
-### 7) 
+### 7) Find the output?
 ```java
 public class Test {
     int x;
@@ -206,7 +207,7 @@ public class Test {
 * Joe
 * because m1(this) will invoke m1 method where the fields are updated to 100 and Joe
 
-### 8)
+### 8) Find the output?
 ```java
 public class Test {
     int x;
@@ -237,7 +238,7 @@ public class Test {
 * false
 * because the this.m1(this) method call will update the filed values and hence the above sout statemets will give false
 
-### 9) 
+### 9) Find the output?
 ```java
 public class Test {
     int x;
@@ -269,7 +270,7 @@ public class Test {
 * Doe 
 * here x = x and y= y will not update the value to the field but the field values will be updated in the m1() and give the above output
 
-### 10) 
+### 10) Find the output?
 ```java
 public class Test {
     int x;
@@ -299,7 +300,7 @@ public class Test {
 * null
 * as explained above the x and y will not update the value hence the value of fields will be default
 
-### 11)
+### 11) Find the output?
 ```java
 public class Test {
     int x;
@@ -411,4 +412,36 @@ public class Test
   }
 }
 ```
-            
+### Ans : 
+* The O/P of the above program is as follows
+* 120
+* 120
+* 120
+* 320
+* 120
+* 120
+* 120
+* 120
+* 440(x = 120 + y = 320) - for object t
+* 240(x = 120 + y = 120) - for object t1
+* ***Explanation***
+* If a field is static then any change to the field value will update the value to the last modified value. As static does not depend on the instance of the class so for any       object the value will be the same 
+
+
+### Write some code to create Null Pointer Exception 
+* If we want to access a non static method with an instance of the class which is assigned to null, it will creat NullPointerException
+* Below is the code that creat nullPointerException
+```java
+public class Test
+{
+      public void m1()
+      {
+            System.out.println("Method m1()")
+      }
+      public static void main(String[] args)
+      {
+            Test t = null;
+            t.m1(); // this line creat nullPointerException
+      }
+}
+```
