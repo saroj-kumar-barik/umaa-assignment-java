@@ -58,6 +58,7 @@ public class StateAndBehavior {
 * It is present in java.lang package.
 
 * ## Find the Output : ##
+---------------------------
 
 ### 1) Find the output?
 ```java
@@ -76,7 +77,7 @@ public class Test
 ### Ans :  O/P of the Program is : 
 * False
 * class Test
-* False
+* False  
 *  ***Explanation***
 * Two different objects obj1 and obj2 has two different hashCodes
 * So obj1.hashCode() == obj2.hashCode() will not be same hence O/P comes False
@@ -98,7 +99,7 @@ public class Test {
 ### Ans : O/P of the program is 
 * 10(as new Test(10) will invoke the constructor and updates the field value to 10 and t.x will give the O/P as 10 )
 
-### 3) Why below code will not compile? What is the fix we have to do so that the code will compile.
+### 3) Why below code will not compile? What is the fix we have to do so that the code will compile.  
 ```java
 public class Test {
     int x;
@@ -112,8 +113,8 @@ public class Test {
 }
 ```
 ### Ans :
-* The above code will give compile time error as the user defind constructor has one argument where as, we have not pass one value of type int.
-* A fix to the program would be, to pass an int value as the constructor parameter in the constructor invoing part.
+* The above code will give compile time error as the user defind constructor has one argument where as, we have not pass one value of type int in the constructor calling part.
+* A fix to the program would be, to pass an int value as the constructor parameter in the constructor invoking part.
 
 ### 4) Will below code will compile?
 ```java
