@@ -127,6 +127,11 @@ public class Test {
 * Inside method m1  
 
 # Activity 4 : Parameterized Methods  
+### Instruction   
+* Define a class called Test.java  
+* Define a main method.   
+* Create a static method sum(int x, int y) and having return type as int. This should give sum of x + y  
+* Call sum(10, 20) from main method and print the result inside main method  
 ```java
 public class Test {
     private int x;
