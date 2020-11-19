@@ -97,6 +97,7 @@ public class autoboxingAndUnboxing {
 ```
 
 ### 5) convert string (decimal value) to long, int, short, byte.  
+***Sol***
 ```java
 public class Conversion {    
     public static void main(String[] args) {
@@ -117,8 +118,70 @@ public class Conversion {
 }
 ```
 
- 
- 
- 
- 
+### 6) Understand the wrapper class hierachy. Explain the wrapper child classes for Number class.
+* Except Short and Boolean Wrapper class all other Wrapper classes Extends the Number Class which is an abstract class and implements Comparable<>  
+* The Character Wrapper class implements java.io.Serializable, Comparable<Character>   
+* The Boolean Wrapper class implements java.io.Serializable,Comparable<Boolean>   
+* The wrapper child classes of Number abstarct class are : Byte, Short, Integer, Double, Float, Long  
+* except this there are 4 other classes namely : "BigDecimal" and "BigInteger" are used for high-precision calculations. "AtomicInteger" and "AtomicLong" are used for multi-threaded applications.   
+ ![alt image](https://docs.oracle.com/javase/tutorial/figures/java/objects-numberHierarchy.gif)     
+
+ ### 7) Define auto boxing & auto unboxing with example.  
+ ***Ans***
+ ```java
+public class autoboxingAndUnboxing {    
+    public static void main(String[] args) {
+        // auto-boxing
+        // conversion of primitive to wrapper types
+        char a = 'a';
+        Character c = a;
+        System.out.println(c); // output - a
+        
+        // un-boxing
+        // conversion of wrapper type to primitive types
+        char c1 = c.charValue();
+        System.out.println(c1); // output - a
+    }
+}
+```
+### 8) Convert a string ("105") to integer. and print the doubleValue(), longValue(), byteValue(), floatValue(), shortValue(), toString() 
+ ***Ans***
+ ```java
+public class NumberClassDemo {    
+    public static void main(String[] args) {
+       String str = "105";
+        // to use  doubleValue(), longValue(), byteValue(), floatValue(), shortValue(), toString() methods
+        // we need Number class.
+        
+        Number n = Integer.parseInt(str);
+
+        System.out.println(n.toString());     // 105
+        System.out.println(n.doubleValue());  // 105.0
+        System.out.println(n.longValue());    // 105
+        System.out.println(n.shortValue());   // 105
+        System.out.println(n.byteValue());    // 105
+        System.out.println(n.floatValue());   // 105.0
+        System.out.println(n.intValue());     // 105
+
+    }
+}
+``` 
+
+### 9) Mention the fully qualified name of each wrapper class.
+***Ans*** 
+* for Numbers : java.lang.Number  
+* for CHaracter : java.lang.Character  
+* for Booleand : java .lang.Boolean  
+
+### 10) Write the class definition for all wrapper class types. Find out the abstract methods peresent in the implemented interface. (Ex: public final class Float extends Number implements Comparable, Comparable: public int compareTo(T o); ).
+***Ans***
+#### Class Definition : 
+* Byte : public final class Byte extends Number implements Comparable<Byte>, Constable, ConstantDesc  
+* Short : public final class Short extends Number implements Comparable<Short>, Constable, ConstantDesc  
+* Integer : public final class Integer extends Number implements Comparable<Integer>, Constable, ConstantDesc  
+* Long : public final class Long extends Number implements Comparable<Long>, Constable, ConstantDesc  
+* Float : public final class Float extends Number implements Comparable<Float>, Constable, ConstantDesc  
+* Double : public final class Double extends Number implements Comparable<Double>, Constable, ConstantDesc  
+* Character : public final class Character implements java.io.Serializable, Comparable<Character>  
+* Boolean : public final class Boolean implements java.io.Serializable,Comparable<Boolean>  
  
