@@ -1,11 +1,11 @@
-# ARRAYS, CUSTOM TYPES, CODING
+## ARRAYS, CUSTOM TYPES, CODING
 
 ## ARRAYS 
 ### 1) Traverse an 1d array using while loop.  
 ```java
 public class ArrayTraversalUsingWhileLoop {
     public static void main(String[] args) {
-        int[] arr = {11,22,33,44,55};
+        int[] arr = {11,33,22,33,44,55};
         int i = 0;
         while (i < arr.length)
         {
@@ -17,7 +17,8 @@ public class ArrayTraversalUsingWhileLoop {
 ```
 
 ***OutPut***  
-11  
+11 
+33 
 22  
 33  
 44  
