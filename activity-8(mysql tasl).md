@@ -12,8 +12,8 @@ BRAND VARCHAR(20) NOT NULL
 ```
 
 * INSERT SOME DATA TO ABOVE TABLE. CATEGORY CAN BE SHOES, JEANS, TOPS. BRANDS CAN BE PUMA, LEVIS, ADIDAS.
-INSERT INTO ITEM_TBL VALUE
 ```sql
+INSERT INTO ITEM_TBL VALUE
 (1,'iid-1',29.30,'sku-id-1','shoe','nike'),
 (2,'iid-2',29.31,'sku-id-2','jeans','being-human'),
 (3,'iid-3',29.31,'sku-id-3','tops','w');
